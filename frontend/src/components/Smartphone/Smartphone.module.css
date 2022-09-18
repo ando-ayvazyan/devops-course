@@ -1,0 +1,133 @@
+.device {
+  border-radius: 40px;
+	border: 2px solid var(--color-gray-light-2);
+	background-color: var(--color-black-3);
+	height: 550px;
+	margin: 0 auto;
+	padding: 60px 10px;
+	position: relative;
+	width: 300px;
+}
+
+.power-btn,
+.vol-up,
+.vol-down {
+	background-color: var(--color-black-3);
+	border-radius: 0 4px 4px 0;
+	position: absolute;
+}
+
+.power-btn {
+	height: 20px;
+	right: -6px;
+	top: 59px;
+	width: 4px;
+}
+
+.vol-up {
+	height: 40px;
+	right: -7px;
+	top: 110px;
+	width: 5px;
+}
+
+.vol-down {
+	height: 40px;
+	right: -7px;
+	top: 155px;
+	width: 5px;
+}
+
+.set {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+	position: absolute;
+	left: 0;
+	top: 17px;
+	width: 100%;
+}
+
+.indicator {
+	background: var(--color-black-1);
+	height: 7px;
+  margin-right: 5px;
+	width: 7px;
+	border-radius: 100%;
+	display: block;
+}
+
+.speaker {
+	background: var(--color-black-1);
+	height: 7px;
+	width: 70px;
+	border-radius: 10px;
+}
+
+.screen {
+	background-color: var(--color-black-1);
+	height: 100%;
+	width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--color-gray-light-1);
+}
+
+.main-btn {
+	background-color: var(--color-black-1);
+	height: 40px;
+	width: 40px;
+	margin: 10px auto;
+	border-radius: 100%;
+  cursor: pointer;
+}
+
+.input-block {
+  padding: 10px;
+  display: flex;
+}
+
+.input-block img {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.input-block input {
+  background: var(--color-gray-dark);
+  height: 30px;
+  border-radius: 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: var(--color-gray-light-1);
+  text-indent: 5px;
+}
+
+.disclaimer {
+  text-align: center;
+}
+
+.scroll-guide {
+  background-color: var(--color-cyan-blue);
+  height: 50px;
+  width: 200px;
+  position: absolute;
+  top: 265px;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  text-align: center;
+  color: var(--color-white);
+  left: 15%;
+}
+
+.scroll-guide.visible {
+  animation: scroll-guide-slide-up .8s ease forwards .4s;
+}
+
+@keyframes scroll-guide-slide-up {
+  to {
+    transform: translateY(-125px);
+  }
+}

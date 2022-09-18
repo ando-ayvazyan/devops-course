@@ -1,0 +1,44 @@
+.keyboard {
+  position: relative;
+  padding: 5px;
+  background: -webkit-linear-gradient(top, rgb(50, 50, 50), rgb(0, 0, 0));
+}
+
+.header {
+  display: flex;
+  height: 25px;
+  align-items: center;
+  font-size: 14px;
+  justify-content: space-around;
+  user-select: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+
+.suggestions {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.suggestions > div {
+  min-width: 90px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.suggestions > div:hover {
+  background-color: var(--color-gray-dark);
+}
+
+.suggestions > div:not(:last-child) {
+  border-right: 2px solid var(--color-gray-light-1);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,14 @@
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# build output
+dist/
+
+backend/.env
+frontend/.env

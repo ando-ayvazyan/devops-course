@@ -1,0 +1,22 @@
+:root {
+  --color-black: #000;
+  --color-black-1: #111;
+  --color-black-3: #333;
+  --color-black-4: #444;
+
+  --color-white: #fff;
+
+  --color-gray-light-1: #ccc;
+  --color-gray-light-2: #ddd;
+  --color-gray-dark: #4c4c4c;
+
+  --color-main: var(--color-gray-dark);
+  --color-bg-main: var(--color-white);
+
+  --color-cyan-blue: #0b5f9b;
+
+  --color-cyan-green: #00a991;
+
+  --font-size-default: 1rem;
+  --font-size-medium: 1.5rem;
+}

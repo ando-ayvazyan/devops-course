@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--color-cyan-green);
+  padding: 8px 16px;
+}
+
+.title {
+  margin-left: 32px;
+  color: var(--color-cyan-green);
+}
+
+.logo {
+  width: 100px;
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .header h1 {
+    font-size: var(--font-size-medium);
+    text-align: center;
+    margin-left: 0;
+  }
+}
